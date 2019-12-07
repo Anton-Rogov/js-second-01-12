@@ -7,47 +7,49 @@
     <title>Document</title>
 </head>
 
-<body>ыы
-    <form>
-        <fieldset>
-            <label>
-                <input type="radio" name="small">Маленький гамбургер
-            </label>
-        </fieldset>
-        <fieldset>
-            <label>
-                <input type="radio" name="big">Большой гамбургер
-            </label>
-        </fieldset>
-        <p>Начинка для гамбургера</p>
-        <fieldset>
-            <label>
-                <input type="radio" name="cheese">С сыром
-            </label>
-        </fieldset>
-        <fieldset>
-            <label>
-                <input type="radio" name="salad">с Салатом
-            </label>
-        </fieldset>
-        <fieldset>
-            <label>
-                <input type="radio" name="potato">С картофелям
-            </label>
-        </fieldset>
-        <p>Дополнительно гамбургер можно посыпать приправой</p>
-        <fieldset>
-            <label>
-                <input type="checkbox" name="priprava">Посыпать преправой
-            </label>
-        </fieldset>
-        <fieldset>
-            <label>
-                <input type="checkbox" name="mayonez">полить майонезом
-            </label>
-        </fieldset>
-    </form>
-
+<body>
+    <div class="position">
+        <form>
+            <fieldset>
+                <label>
+                    <input type="radio" name="gamburger" value="1" data-calori='20' data-price="50">Маленький гамбургер
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <input type="radio" name="gamburger" value="0" data-calori='40' data-price="100">Большой гамбургер
+                </label>
+            </fieldset>
+            <p>Начинка для гамбургера</p>
+            <fieldset>
+                <label>
+                    <input type="radio" name="nachinka" value="1" data-calori='20' data-price="10">С сыром
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <input type="radio" name="nachinka" value="0" data-calori='5' data-price="20">С салатом
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <input type="radio" name="nachinka" value="1" data-calori='10' data-price="15">С картофелям
+                </label>
+            </fieldset>
+            <p>Дополнительно гамбургер можно посыпать приправой</p>
+            <fieldset>
+                <label>
+                    <input type="checkbox" name="priprava" data-calori='0' data-price="15">Посыпать преправой
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <input type="checkbox" name="mayonez" data-calori='5' data-price="20">полить майонезом
+                </label>
+            </fieldset>
+        </form>
+        <button id ="order" >Оформить заказ</button>
+    </div>
     <script src="script.js">
     </script>
 </body>
